@@ -1,1 +1,1 @@
-# workflow_test
+Release v1.0.0
