@@ -1,0 +1,11 @@
+name: PR Title Check
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - release
+jobs:
+  merge_pr:
+      uses: MangeshBangaleOrg/Test/.github/workflows/merge_pr.yml@workflow
+      secrets:
+        envPAT: ${{ secrets.GIT_TOKEN }}
