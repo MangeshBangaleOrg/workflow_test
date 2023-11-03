@@ -1,0 +1,9 @@
+name: Print Name
+on:
+  workflow_dispatch:
+jobs:
+  merge_pr:
+      uses: MangeshBangaleOrg/Test/.github/workflows/merge_pr.yml@workflow
+      secrets: inherit
+      with:
+        name: ${{ inputs.name }}
