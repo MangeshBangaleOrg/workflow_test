@@ -1,9 +1,11 @@
 name: PR Title Check
 on:
-  pull_request:
-    types: [opened, reopened]
-    branches:
-      - release
+  workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        description: Print name
+        required: true
 jobs:
   merge_pr:
       uses: MangeshBangaleOrg/Test/.github/workflows/merge_pr.yml@workflow
