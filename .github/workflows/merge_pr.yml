@@ -2,7 +2,7 @@ name: PR Title Check
 on:
   workflow_dispatch:
     inputs:
-      name: Mangesh
+      name:
         type: string
         description: Print name
         required: true
